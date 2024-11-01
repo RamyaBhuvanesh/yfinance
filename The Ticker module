@@ -75,3 +75,8 @@ msft.news
 # get option chain for specific expiration
 opt = msft.option_chain('YYYY-MM-DD')
 # data available via: opt.calls, opt.puts
+
+# To download price history into one table:
+
+import yfinance as yf
+data = yf.download("SPY AAPL", period="1mo")
